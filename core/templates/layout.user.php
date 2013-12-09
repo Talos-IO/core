@@ -116,7 +116,7 @@
 		</div></nav>
 
 		<div id="content-wrapper">
-			<div id="content">
+			<div id="content" class="app-<?php p($_['appid']) ?>">
 				<?php print_unescaped($_['content']); ?>
 			</div>
 		</div>
