@@ -366,6 +366,14 @@ $(document).ready(function() {
 		});
 	}
 
+	$('#app-settings-header').on('click', function() {
+		var $settings = $('#app-settings');
+		$settings.toggleClass('opened');
+		if ($settings.hasClass('opened')) {
+			$settings.find('input').focus();
+		}
+	});
+
 	//scroll to and highlight preselected file
 	if (getURLParameter('scrollto')) {
 		FileList.scrollTo(getURLParameter('scrollto'));

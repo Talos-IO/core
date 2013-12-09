@@ -355,3 +355,7 @@ table.dragshadow td.size {
 .mask.transparent{
 	opacity: 0;
 }
+
+.app-files #app-settings input {
+	width: 90%;
+}
